@@ -9,6 +9,7 @@ func main() {
 
 	urlPtr := flag.String("url", "https://httpbin.org/get", "url of content to fetch")
 	flag.Parse()
+	formatPtr := flag.String("format", "html", "Prettier format to use.")
 
 	// fmt.Println("url: ", *urlPtr)
 
