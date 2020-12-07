@@ -3,6 +3,8 @@ package main
 import (
 	"flag"
 	"fmt"
+
+	"github.com/skeptycal/util/scargo/getpage"
 )
 
 func main() {
@@ -13,7 +15,7 @@ func main() {
 
 	// fmt.Println("url: ", *urlPtr)
 
-	page, err := GetPage(*urlPtr)
+	page, err := getpage.GetPage(*urlPtr)
 	if err != nil {
 		fmt.Println("error retrieving url: ", err)
 	}
